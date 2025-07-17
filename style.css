@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /*Suavidade ao descer a pagina*/
+}
+
+body {
+    overflow: hidden; /*Remove a barra de rolagem*/
+}
+
+header {
+    background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
+    color: #fff;
+    padding: 0 2rem;
+    height: 4.8rem;
+    display: grid;
+    align-items: center;
+}
+
+.container-header {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo {
+    display: flex;
+    margin: 0 10px;
+}
+
+.div-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.5rem;
+    padding: 0 20px 5px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.div-logo-img {
+    width: 3.5rem;
+   border-radius: 50%;
+}
+
+.div-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px;
+}
+
+.button-list {
+    background-color: #784538;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.button-list:hover {
+    transform: scale(1.05);
+    transition-duration: 200ms;
+    background-color: #a65c4b;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffb3;
+    font-size: 1.2rem;
+    display: inline-block;
+
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.menu-link:hover {
+    color: #fff;
+    transition-duration: 500ms;
+}
+
+.img-button-links {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 965px) {
+    .div-logo a {
+        font-size: 1.4rem;
+    }
+    .menu-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    header {
+        padding: 0;
+    }
+     .div-logo a {
+        font-size: 1.5rem;
+    }
+}
+
