@@ -107,6 +107,84 @@ header {
     margin-left: 5px;
 }
 
+main {
+    min-height: 600px;
+    padding: 0 50px;
+    background-color: #270c03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container-home {
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.div-text-home {
+
+    text-align: start;
+}
+
+.h1-text-home {
+    font-size: 4rem;
+    font-weight: bold;
+    width: 50%;
+}
+
+.span-h1-home {
+    font-family: "Pacifico", cursive;
+    color: #854d3d;
+}
+
+.button-home {
+    background: linear-gradient(to right, #854d3d, #4a1e1b);
+    border: 2px solid #854d3d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+        background-color: #a65c4b;
+        transition-duration: 200ms;
+    }
+}
+
+.img-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: scale(1.25);
+    animation: balance 5s infinite;
+}
+
+@keyframes balance {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
 @media screen and (max-width: 965px) {
     .div-logo a {
         font-size: 1.4rem;
