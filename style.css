@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    overflow: hidden; /*Remove a barra de rolagem*/
+   /* overflow: hidden; Remove a barra de rolagem*/
 }
 
 header {
@@ -180,6 +180,116 @@ main {
     }
     
 }
+
+.secction-services {
+    padding: 2.5rem 3rem;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.container-services {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 0 3rem;
+}
+
+.tittle-section-services {
+    margin-top: 30px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: "Pacifico", cursive;
+    color: #2d3748;
+}
+
+.div-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    place-items: center;
+}
+
+.image-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    place-items: center;
+    
+}
+
+.service-card {
+   border-radius: 1rem;
+   background-color: white;
+   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+   transition: all 0.5s ease;
+   max-width: 300px;
+   position: relative;
+}
+
+.service-card:hover {
+   background-color: #854d3d;
+   color: white;
+}
+
+.div-card-image {
+    height: 122px;
+}
+
+.image-card {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-3.5rem);
+    transition: transform 0.3s ease, rotate 0.3s ease;
+}
+
+.service-card:hover .image-card {
+    transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
+}
+
+.div-text-services-card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.h1-service-card {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.p-card-service {
+    color: #6b7280;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* Limita a 3 linhas */
+    -webkit-line-clamp: 2
+}
+
+.service-card:hover .p-card-service {
+    color: #ffffff;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 965px) {
     .div-logo a {
